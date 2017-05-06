@@ -38,10 +38,8 @@ public class ItemManager : MonoBehaviour {
         {
             click.gold -= cost;
             count += 1;
-            cost = Mathf.Round (baseCost * Mathf.Pow(1.15f, count)); // testing 
+            cost = Mathf.Round (baseCost * Mathf.Pow(1.15f, count));
         }
     }
 
 }
-
-//Testing

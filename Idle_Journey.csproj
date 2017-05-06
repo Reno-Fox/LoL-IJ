@@ -86,9 +86,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Click.cs" />
     <Compile Include="Assets\Scripts\CurrencyConverter.cs" />
-    <Compile Include="Assets\Scripts\GoldPerSec.cs" />
-    <Compile Include="Assets\Scripts\ItemManager.cs" />
-    <Compile Include="Assets\Scripts\UpgradeManager.cs" />
+    <Compile Include="Assets\Scripts\GameControl.cs" />
+    <Compile Include="Assets\Scripts\Managers\HeroManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\Purchasable\Hero.cs" />
+    <Compile Include="Assets\Scripts\Managers\Purchasable\Item.cs" />
+    <Compile Include="Assets\Scripts\Settings.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

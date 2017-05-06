@@ -300,7 +300,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mine Gold
+  m_Text: Farm Minion
 --- !u!222 &42841127
 CanvasRenderer:
   m_ObjectHideFlags: 0

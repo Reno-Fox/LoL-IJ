@@ -1,22 +1,23 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.UI;
 
 public class Click : MonoBehaviour {
 
-    public UnityEngine.UI.Text gpc;
-    public UnityEngine.UI.Text goldDisplay;
-    public float gold = 0.00f;
-    public int goldPerClick = 1;
+    public Text goldPerClickText;
+    public Text goldDisplayText;
+
+    public float totalGold = 0.00f; //super
+    public int totalGoldPerClick = 1; //super
 
     void Update()
     {
-        goldDisplay.text = "Gold: " + CurrencyConverter.Instance.GetCurrencyIntoString(gold,false, false);
-        gpc.text = goldPerClick + " gold/click";
+        goldDisplayText.text = "Gold: " + CurrencyConverter.Instance.GetCurrencyIntoString(totalGold,false, false);
+        goldPerClickText.text = totalGoldPerClick + " gold/click";
     }
 
     public void Clicked()
     {
-        gold += goldPerClick;
+        totalGold += totalGoldPerClick;
     }
 
 }

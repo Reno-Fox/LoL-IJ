@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 
+[Serializable]
 public class Hero : MonoBehaviour {
 
     public Click click;

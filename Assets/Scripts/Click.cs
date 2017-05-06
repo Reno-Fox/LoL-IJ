@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 
+[Serializable]
 public class Click : MonoBehaviour {
 
     public Text goldPerClickText;

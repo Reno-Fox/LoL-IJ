@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Idle_Journey", "Idle_Journey.csproj", "{D7D96766-8EA0-E91F-742D-BA347EA3D252}"
 EndProject
 Global

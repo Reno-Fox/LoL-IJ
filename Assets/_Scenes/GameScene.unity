@@ -157,23 +157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 1365191987}
-  click: {fileID: 2046947263}
-  cost: 31250
-  tickValue: 1024
-  count: 0
-  itemName: c2a05761727769636b
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
-  baseCost: 0
 --- !u!114 &39829494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,23 +365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 799313148}
-  click: {fileID: 2046947263}
-  cost: 97656250
-  tickValue: 1048576
-  count: 0
-  itemName: 5472697374616e61
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
-  baseCost: 0
 --- !u!114 &58445753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,7 +735,7 @@ MonoBehaviour:
   click: {fileID: 2046947263}
   itemName: Morgana
   itemInfo: {fileID: 1896525138}
-  baseCost: 1
+  goldCost: 1
   count: 0
   clickRate: 1
   standard: {r: 0, g: 0, b: 0, a: 0}
@@ -826,7 +792,7 @@ MonoBehaviour:
   click: {fileID: 2046947263}
   itemName: First item
   itemInfo: {fileID: 1434695390}
-  newCost: 1
+  goldCostMultiplier: 1
   count: 0
   clickRate: 1
   standard: {r: 0, g: 0, b: 0, a: 0}
@@ -1039,23 +1005,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 1965197301}
-  click: {fileID: 2046947263}
-  cost: 781250
-  tickValue: 16384
-  count: 0
-  itemName: c2a04e756e75
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
-  baseCost: 0
 --- !u!114 &403937666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1642,23 +1591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 1666346060}
-  click: {fileID: 2046947263}
-  cost: 19531250
-  tickValue: 262144
-  count: 0
-  itemName: 5369766972
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
-  baseCost: 0
 --- !u!114 &807613945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,7 +2124,7 @@ MonoBehaviour:
   click: {fileID: 2046947263}
   itemName: Second Item
   itemInfo: {fileID: 59565752}
-  newCost: 2
+  goldCostMultiplier: 2
   count: 0
   clickRate: 2
   standard: {r: 0, g: 0, b: 0, a: 0}
@@ -2331,23 +2263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 1737410983}
-  click: {fileID: 2046947263}
-  cost: 6250
-  tickValue: 256
-  count: 0
-  itemName: 416d756d75
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
-  baseCost: 0
 --- !u!114 &1263330231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2570,7 +2485,7 @@ MonoBehaviour:
   click: {fileID: 2046947263}
   itemName: Malphite
   itemInfo: {fileID: 1464538081}
-  baseCost: 1
+  goldCost: 2
   count: 0
   clickRate: 2
   standard: {r: 0, g: 0, b: 0, a: 0}
@@ -3208,23 +3123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 1929375945}
-  click: {fileID: 2046947263}
-  cost: 1250
-  tickValue: 64
-  count: 0
-  itemName: 536f72616b61
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
-  baseCost: 0
 --- !u!114 &1651110833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3507,23 +3405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 381167689}
-  click: {fileID: 2046947263}
-  cost: 3906250
-  tickValue: 65536
-  count: 0
-  itemName: c2a041736865
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
-  baseCost: 0
 --- !u!114 &1795795982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3806,23 +3687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 797363504}
-  click: {fileID: 2046947263}
-  cost: 156250
-  tickValue: 4096
-  count: 0
-  itemName: c2a0426c69747a6372616e6b
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
-  baseCost: 0
 --- !u!114 &1933303210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4033,7 +3897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goldPerClickText: {fileID: 612701569}
   goldDisplayText: {fileID: 1339972375}
-  totalGold: 100
+  totalGold: 0
   totalGoldPerClick: 1
 --- !u!114 &2046947264
 MonoBehaviour:
@@ -4172,7 +4036,7 @@ MonoBehaviour:
   click: {fileID: 2046947263}
   itemName: Third Item
   itemInfo: {fileID: 1588003417}
-  newCost: 3
+  goldCostMultiplier: 3
   count: 1
   clickRate: 3
   standard: {r: 0, g: 0, b: 0, a: 0}

@@ -7,7 +7,7 @@ public class Hero : MonoBehaviour {
     public string itemName;
     public Text itemInfo;
 
-    public float baseCost;
+    public float goldCost;
     public int count;
 
     public int clickRate;
@@ -22,9 +22,9 @@ public class Hero : MonoBehaviour {
 
     void Update()
     {
-        itemInfo.text = itemName + "\nCost " + baseCost + "\nGold: " + clickRate + "/s";
+        itemInfo.text = itemName + "\nCost " + goldCost + "\nGold: " + clickRate + "/s";
 
-        if (click.totalGold >= baseCost)
+        if (click.totalGold >= goldCost)
         {
             GetComponent<Image>().color = affordable;
         }
@@ -36,11 +36,11 @@ public class Hero : MonoBehaviour {
 
     public void PurchasedHero()
     {
-        if (click.totalGold >= baseCost)
+        if (click.totalGold >= goldCost)
         {
-            click.totalGold -= baseCost;
+            click.totalGold -= goldCost;
             count += 1;
-            baseCost = Mathf.Round(baseCost * Mathf.Pow(Settings.PurchaseIncreaseRate, count));
+            goldCost = Mathf.Round(goldCost * Mathf.Pow(Settings.PurchaseIncreaseRate, count));
         }
     }
 

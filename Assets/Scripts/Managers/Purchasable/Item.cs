@@ -7,8 +7,8 @@ public class Item : MonoBehaviour {
     public string itemName;
     public Text itemInfo;
 
-    private float baseCost;
-    public float newCost;
+    private float goldCost;
+    public float goldCostMultiplier;
     public int count;
 
     public int clickRate;
@@ -19,14 +19,14 @@ public class Item : MonoBehaviour {
     void Start()
     {
         count = 0;
-        baseCost = newCost;
+        goldCost = goldCostMultiplier;
     }
 
     void Update()
     {
-        itemInfo.text = itemName + "\nCost: " + newCost + "\nPower: " + clickRate;
+        itemInfo.text = itemName + "\nCost: " + goldCostMultiplier + "\n" + clickRate + "/gold click";
 
-        if (click.totalGold >= newCost)
+        if (click.totalGold >= goldCostMultiplier)
         {
             GetComponent<Image>().color = affordable;
         }
@@ -38,12 +38,12 @@ public class Item : MonoBehaviour {
 
     public void PurchaseItem()
     {
-        if (click.totalGold >= newCost)
+        if (click.totalGold >= goldCostMultiplier)
         {
-            click.totalGold -= newCost;
+            click.totalGold -= goldCostMultiplier;
             count += 1;
             click.totalGoldPerClick += clickRate;
-            newCost = Mathf.Round(baseCost * Mathf.Pow(Settings.PurchaseIncreaseRate, count));
+            goldCostMultiplier = Mathf.Round(goldCost * Mathf.Pow(Settings.PurchaseIncreaseRate, count));
         }
     }
 }

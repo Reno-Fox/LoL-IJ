@@ -2,9 +2,8 @@
 using UnityEngine.UI;
 using System;
 
-public class Item : MonoBehaviour {
-
-    public Game game;
+public class Item : MonoBehaviour
+{
     public string itemName;
     public Text itemInfo;
 
@@ -27,7 +26,7 @@ public class Item : MonoBehaviour {
     {
         itemInfo.text = itemName + "\nCost: " + goldCostMultiplier + "\n" + clickRate + "/gold click";
 
-        if (game.clickManager.totalGold >= goldCostMultiplier)
+        if (Game.Instance.clickManager.totalGold >= goldCostMultiplier)
         {
             GetComponent<Image>().color = affordable;
         }
@@ -39,11 +38,11 @@ public class Item : MonoBehaviour {
 
     public void PurchaseItem()
     {
-        if (game.clickManager.totalGold >= goldCostMultiplier)
+        if (Game.Instance.clickManager.totalGold >= goldCostMultiplier)
         {
-            game.clickManager.totalGold -= goldCostMultiplier;
+            Game.Instance.clickManager.totalGold -= goldCostMultiplier;
             count += 1;
-            game.clickManager.totalGoldPerClick += clickRate;
+            Game.Instance.clickManager.totalGoldPerClick += clickRate;
             goldCostMultiplier = Mathf.Round(goldCost * Mathf.Pow(Settings.PurchaseIncreaseRate, count));
         }
     }

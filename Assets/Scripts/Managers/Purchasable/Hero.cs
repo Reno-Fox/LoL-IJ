@@ -2,9 +2,8 @@
 using UnityEngine.UI;
 using System;
 
-public class Hero : MonoBehaviour {
-
-    public Game game;
+public class Hero : MonoBehaviour
+{
     public string itemName;
     public Text itemInfo;
 
@@ -25,7 +24,7 @@ public class Hero : MonoBehaviour {
     {
         itemInfo.text = itemName + "\nCost " + goldCost + "\nGold: " + clickRate + "/s";
 
-        if (game.clickManager.totalGold >= goldCost)
+        if (Game.Instance.clickManager.totalGold >= goldCost)
         {
             GetComponent<Image>().color = affordable;
         }
@@ -37,9 +36,9 @@ public class Hero : MonoBehaviour {
 
     public void PurchasedHero()
     {
-        if (game.clickManager.totalGold >= goldCost)
+        if (Game.Instance.clickManager.totalGold >= goldCost)
         {
-            game.clickManager.totalGold -= goldCost;
+            Game.Instance.clickManager.totalGold -= goldCost;
             count += 1;
             goldCost = Mathf.Round(goldCost * Mathf.Pow(Settings.PurchaseIncreaseRate, count));
         }

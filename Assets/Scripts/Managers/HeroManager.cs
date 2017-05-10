@@ -4,9 +4,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-public class HeroManager : MonoBehaviour {
-
-    public Game game;
+public class HeroManager : MonoBehaviour
+{
     public Text totalHeroGoldValue;
 
     public List<Hero> heroes;
@@ -33,7 +32,7 @@ public class HeroManager : MonoBehaviour {
 
     public void AutoGoldPerSecondInterval()
     {
-        game.clickManager.totalGold += GetHeroValue() / Settings.AutoGoldPerSecondInterval;
+        Game.Instance.clickManager.totalGold += GetHeroValue() / Settings.AutoGoldPerSecondInterval;
     }
 
     IEnumerator AutoTick()

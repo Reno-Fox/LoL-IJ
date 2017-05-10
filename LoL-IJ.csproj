@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Managers\Purchasable\Hero.cs" />
     <Compile Include="Assets\Scripts\Managers\Purchasable\Item.cs" />
+    <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\SaveLoad.cs" />
     <Compile Include="Assets\Scripts\Settings.cs" />
   </ItemGroup>

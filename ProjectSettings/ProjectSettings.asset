@@ -135,8 +135,14 @@ PlayerSettings:
       depthFormat: 1
   protectGraphicsMemory: 0
   useHDRDisplay: 0
-  applicationIdentifier: {}
-  buildNumber: {}
+  applicationIdentifier:
+    Android: com.Company.ProductName
+    Standalone: unity.DefaultCompany.Idle_Journey
+    Tizen: com.Company.ProductName
+    iOS: com.Company.ProductName
+    tvOS: com.Company.ProductName
+  buildNumber:
+    iOS: 0
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
@@ -155,10 +161,10 @@ PlayerSettings:
     serializedVersion: 2
     m_Bits: 238
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 
+  iOSTargetOSVersionString: 6.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
-  tvOSTargetOSVersionString: 
+  tvOSTargetOSVersionString: 9.0
   uIPrerenderedIcon: 0
   uIRequiresPersistentWiFi: 0
   uIRequiresFullScreen: 1
@@ -494,7 +500,9 @@ PlayerSettings:
   webGLCompressionFormat: 1
   scriptingDefineSymbols: {}
   platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingBackend:
+    Android: 0
+    Standalone: 0
   incrementalIl2cppBuild: {}
   additionalIl2CppArgs: 
   apiCompatibilityLevelPerPlatform: {}

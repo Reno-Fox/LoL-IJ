@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections.Generic;
+using System;
 
-public class ItemManager : MonoBehaviour
-{
-    public Click click;
+public class ItemManager : MonoBehaviour { 
+
     public Text goldPerSecondText;
 
-    public Item[] items;
+    public List<Item> items;
 
     void Update()
     {

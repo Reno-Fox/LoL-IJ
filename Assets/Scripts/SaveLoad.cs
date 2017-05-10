@@ -1,41 +1,123 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using System.Runtime.Serialization.Formatters.Binary;
+using System.Linq;
+using System.Text;
 using System.IO;
-using System;
+using System.Runtime.Serialization.Formatters.Binary;
 
+using UnityEngine;
+
+[Serializable]
 public class SaveLoad : MonoBehaviour
 {
-    public Game savedGames;
-
-    void Awake()
+    private string SaveLocation
     {
-        DontDestroyOnLoad(this);
+        get { return Application.persistentDataPath + "/savedGames.lol"; }
     }
-    //it's static so we can call it from anywhere
+
     public void Save()
     {
-        savedGames = Game.current;
-        BinaryFormatter bf = new BinaryFormatter();
-        //Application.persistentDataPath is a string, so if you wanted you can put that into debug.log if you want to know where save games are located
-        FileStream file = File.Create(Application.persistentDataPath + "/savedGames.gd"); //you can call it anything you want
-        bf.Serialize(file, savedGames);
+        BinaryFormatter format = new BinaryFormatter();
+        FileStream file = File.Create(SaveLocation);
+
+        SaveState save = new SaveState();
+
+        save.TotalGold = Game.Instance.clickManager.totalGold;
+        save.TotalGoldPerClick = Game.Instance.clickManager.totalGoldPerClick;
+
+        foreach(Item i in Game.Instance.itemManager.items)
+        {
+            ItemSaveState item = new ItemSaveState();
+            item.GoldCostMultiplier = i.goldCostMultiplier;
+            item.GoldCost = i.goldCost;
+            item.Count = i.count;
+
+            save.Items.Add(item);
+        }
+
+        foreach (Hero h in Game.Instance.heroManager.heroes)
+        {
+            HeroSaveState hero = new HeroSaveState();
+            hero.GoldCost = h.goldCost;
+            hero.Count = h.count;
+            hero.ClickRate = h.clickRate;
+
+            save.Heroes.Add(hero);
+        }
+
+        format.Serialize(file, save);
         file.Close();
-        Debug.Log("Save Completed");
-        Debug.Log(Application.persistentDataPath + " / savedGames.gd");
+
+        Debug.Log("Game Saved.");
     }
 
     public void Load()
     {
-        if (File.Exists(Application.persistentDataPath + "/savedGames.gd"))
+        if (File.Exists(SaveLocation))
         {
-            BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/savedGames.gd", FileMode.Open);
-            savedGames = (Game)bf.Deserialize(file);
+            BinaryFormatter format = new BinaryFormatter();
+            FileStream file = File.Open(SaveLocation, FileMode.Open);
+
+            SaveState save = (SaveState)format.Deserialize(file);
             file.Close();
+
+            Game.Instance.clickManager.totalGold = save.TotalGold;
+            Game.Instance.clickManager.totalGoldPerClick = save.TotalGoldPerClick;
+
+            Game.Instance.itemManager.items.Clear();
+            foreach (ItemSaveState i in save.Items)
+            {
+                Item item = new global::Item();
+                item.goldCostMultiplier = i.GoldCostMultiplier;
+                item.goldCost = i.GoldCost;
+                item.count = i.Count;
+
+                Game.Instance.itemManager.items.Add(item);
+            }
+
+            Game.Instance.heroManager.heroes.Clear();
+            foreach (HeroSaveState i in save.Heroes)
+            {
+                Hero hero = new Hero();
+                hero.goldCost = i.GoldCost;
+                hero.count = i.Count;
+                hero.clickRate = i.ClickRate;
+
+                Game.Instance.heroManager.heroes.Add(hero);
+            }
+
+            Debug.Log("Game Load. ");
         }
-        Debug.Log("Load Completed");
-        Debug.Log(Application.persistentDataPath + " / savedGames.gd");
+        else
+        {
+            Debug.Log("File does not exist.");
+        }
     }
+}
+
+[Serializable]
+class SaveState
+{
+    public float TotalGold = 0;
+    public float TotalGoldPerClick = 0;
+    [SerializeField]
+    public List<ItemSaveState> Items = new List<ItemSaveState>();
+    [SerializeField]
+    public List<HeroSaveState> Heroes = new List<HeroSaveState>();
+}
+
+[Serializable]
+class HeroSaveState
+{
+    public float GoldCost;
+    public int Count;
+    public int ClickRate;
+}
+
+[Serializable]
+class ItemSaveState
+{
+    public float GoldCost;
+    public float GoldCostMultiplier;
+    public int Count;
 }

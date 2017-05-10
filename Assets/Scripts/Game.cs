@@ -1,21 +1,26 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.IO;
 using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
-[Serializable]
 public class Game : MonoBehaviour
 {
-    public Click clickManager;
+    public static Game Instance;
+
+    public ClickManager clickManager;
     public HeroManager heroManager;
     public ItemManager itemManager;
 
-    public static Game current;
-
-    public Game()
+    void Awake()
     {
-        current = this;
+        if (Instance == null)
+        {
+            DontDestroyOnLoad(Instance);
+            Instance = this;
+        }
+        else if (Instance != this)
+        {   
+            Destroy(gameObject);
+        }
     }
 }

@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
+using System;
 
 public class HeroManager : MonoBehaviour {
 
-    public Click click;
+    public Game game;
     public Text totalHeroGoldValue;
 
-    public Hero[] heroes;
+    public List<Hero> heroes;
 
     void Start()
     {
@@ -31,7 +33,7 @@ public class HeroManager : MonoBehaviour {
 
     public void AutoGoldPerSecondInterval()
     {
-        click.totalGold += GetHeroValue() / Settings.AutoGoldPerSecondInterval;
+        game.clickManager.totalGold += GetHeroValue() / Settings.AutoGoldPerSecondInterval;
     }
 
     IEnumerator AutoTick()

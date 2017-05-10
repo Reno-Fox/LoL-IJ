@@ -157,22 +157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 1365191987}
-  click: {fileID: 2046947263}
-  cost: 31250
-  tickValue: 1024
-  count: 0
-  itemName: c2a05761727769636b
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
 --- !u!114 &39829494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,22 +365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 799313148}
-  click: {fileID: 2046947263}
-  cost: 97656250
-  tickValue: 1048576
-  count: 0
-  itemName: 5472697374616e61
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
 --- !u!114 &58445753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,7 +676,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 324400483}
-        m_MethodName: PurchasedItem
+        m_MethodName: PurchasedHero
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -761,25 +729,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 324400478}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e42faaa678d2c9418c690fee62eb8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: Morgana
   itemInfo: {fileID: 1896525138}
-  click: {fileID: 2046947263}
-  cost: 50
-  tickValue: 4
+  goldCost: 1
   count: 0
-  itemName: 4d6f7267616e61
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
+  clickRate: 1
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 0}
 --- !u!1 &375028233
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,7 +752,7 @@ GameObject:
   - component: {fileID: 375028236}
   - component: {fileID: 375028235}
   m_Layer: 5
-  m_Name: Button1
+  m_Name: Item1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -826,25 +785,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 375028233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8de4ced0ee916f498adc943cde43326, type: 3}
+  m_Script: {fileID: 11500000, guid: f45d335941e753f42a3dbac6e11a012e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  click: {fileID: 2046947263}
+  itemName: 1
   itemInfo: {fileID: 1434695390}
-  cost: 10
+  goldCost: 1
+  goldCostMultiplier: 1
   count: 0
-  clickPower: 1
-  itemName: 4669727374206974656d
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
+  clickRate: 1
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 0}
 --- !u!114 &375028236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,7 +836,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 375028235}
-        m_MethodName: PurchaseUpgrade
+        m_MethodName: PurchaseItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1053,22 +1004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 1965197301}
-  click: {fileID: 2046947263}
-  cost: 781250
-  tickValue: 16384
-  count: 0
-  itemName: c2a04e756e75
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
 --- !u!114 &403937666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1268,7 +1203,7 @@ GameObject:
   - component: {fileID: 527901989}
   - component: {fileID: 527901988}
   m_Layer: 5
-  m_Name: GoldPerClick
+  m_Name: ItemManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1290,7 +1225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 75}
+  m_AnchoredPosition: {x: 97, y: 379}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &527901988
@@ -1301,25 +1236,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 527901986}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8de4ced0ee916f498adc943cde43326, type: 3}
+  m_Script: {fileID: 11500000, guid: 2aaf311db160b524facc97a7f85baa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  click: {fileID: 2046947263}
-  itemInfo: {fileID: 612701569}
-  cost: 100
-  count: 0
-  clickPower: 10
-  itemName: 5468697264204974656d
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
+  goldPerSecondText: {fileID: 612701569}
+  items:
+  - {fileID: 375028235}
+  - {fileID: 1164580139}
+  - {fileID: 2120487369}
 --- !u!114 &527901989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1665,22 +1589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 1666346060}
-  click: {fileID: 2046947263}
-  cost: 19531250
-  tickValue: 262144
-  count: 0
-  itemName: 5369766972
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
 --- !u!114 &807613945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1779,7 +1687,7 @@ GameObject:
   - component: {fileID: 923904588}
   - component: {fileID: 923904587}
   m_Layer: 5
-  m_Name: GoldPerSec
+  m_Name: HeroManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1801,7 +1709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 25}
+  m_AnchoredPosition: {x: -80, y: 379}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &923904587
@@ -1812,14 +1720,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 923904585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5a4d46ef3721f748966c51ff05ccbcc, type: 3}
+  m_Script: {fileID: 11500000, guid: f710b7f804c119645b81599b543fd2b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gpsDisplay: {fileID: 279775493}
-  click: {fileID: 2046947263}
-  items:
+  totalHeroGoldValue: {fileID: 279775493}
+  heroes:
   - {fileID: 324400483}
-  - {fileID: 1326205118}
 --- !u!114 &923904588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2069,8 +1975,9 @@ GameObject:
   - component: {fileID: 1068910988}
   - component: {fileID: 1068910987}
   - component: {fileID: 1068910986}
+  - component: {fileID: 1068910989}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: GameCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2162,6 +2069,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1068910989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1068910984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f7e6827a1e90b4db6454aee8a887ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickManager: {fileID: 2046947263}
+  heroManager: {fileID: 923904587}
+  itemManager: {fileID: 527901988}
 --- !u!1 &1164580137
 GameObject:
   m_ObjectHideFlags: 0
@@ -2175,7 +2096,7 @@ GameObject:
   - component: {fileID: 1164580140}
   - component: {fileID: 1164580139}
   m_Layer: 5
-  m_Name: Button2
+  m_Name: Item2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2208,25 +2129,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1164580137}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8de4ced0ee916f498adc943cde43326, type: 3}
+  m_Script: {fileID: 11500000, guid: f45d335941e753f42a3dbac6e11a012e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  click: {fileID: 2046947263}
+  itemName: 2
   itemInfo: {fileID: 59565752}
-  cost: 30
+  goldCost: 1
+  goldCostMultiplier: 1
   count: 0
-  clickPower: 5
-  itemName: 5365636f6e64204974656d
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
+  clickRate: 2
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 0}
 --- !u!114 &1164580140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2267,7 +2180,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1164580139}
-        m_MethodName: PurchaseUpgrade
+        m_MethodName: PurchaseItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2361,22 +2274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 1737410983}
-  click: {fileID: 2046947263}
-  cost: 6250
-  tickValue: 256
-  count: 0
-  itemName: 416d756d75
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
 --- !u!114 &1263330231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2596,22 +2493,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 1464538081}
-  click: {fileID: 2046947263}
-  cost: 250
-  tickValue: 16
-  count: 0
-  itemName: 4d616c7068697465
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
 --- !u!1 &1339972374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,22 +3126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 1929375945}
-  click: {fileID: 2046947263}
-  cost: 1250
-  tickValue: 64
-  count: 0
-  itemName: 536f72616b61
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
 --- !u!114 &1651110833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3543,22 +3408,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 381167689}
-  click: {fileID: 2046947263}
-  cost: 3906250
-  tickValue: 65536
-  count: 0
-  itemName: c2a041736865
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
 --- !u!114 &1795795982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3841,22 +3690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986a516ff0ef44d47b8e7bce81895058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemInfo: {fileID: 797363504}
-  click: {fileID: 2046947263}
-  cost: 156250
-  tickValue: 4096
-  count: 0
-  itemName: c2a0426c69747a6372616e6b
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
 --- !u!114 &1933303210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4029,7 +3862,7 @@ GameObject:
   - component: {fileID: 2046947264}
   - component: {fileID: 2046947263}
   m_Layer: 5
-  m_Name: Click
+  m_Name: ClickManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4065,8 +3898,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39fe98e54379afd46b3d050307a97bd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goldPerClickText: {fileID: 0}
-  goldDisplayText: {fileID: 0}
+  goldPerClickText: {fileID: 612701569}
+  goldDisplayText: {fileID: 1339972375}
   totalGold: 0
   totalGoldPerClick: 1
 --- !u!114 &2046947264
@@ -4167,7 +4000,7 @@ GameObject:
   - component: {fileID: 2120487370}
   - component: {fileID: 2120487369}
   m_Layer: 5
-  m_Name: Button3
+  m_Name: Item3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4200,25 +4033,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2120487367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8de4ced0ee916f498adc943cde43326, type: 3}
+  m_Script: {fileID: 11500000, guid: f45d335941e753f42a3dbac6e11a012e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  click: {fileID: 2046947263}
+  itemName: 3
   itemInfo: {fileID: 1588003417}
-  cost: 100
+  goldCost: 1
+  goldCostMultiplier: 1
   count: 0
-  clickPower: 10
-  itemName: 5468697264204974656d
-  standard:
-    r: 0
-    g: 0
-    b: 0
-    a: 0
-  affordable:
-    r: 1
-    g: 1
-    b: 1
-    a: 0.39215687
+  clickRate: 3
+  standard: {r: 0, g: 0, b: 0, a: 0}
+  affordable: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 0}
 --- !u!114 &2120487370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4259,7 +4084,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2120487369}
-        m_MethodName: PurchaseUpgrade
+        m_MethodName: PurchaseItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -17,7 +17,7 @@ public class HeroManager : MonoBehaviour
 
     void Update()
     {
-        totalHeroGoldValue.text = GetHeroValue() + "gold/sec";
+        totalHeroGoldValue.text = GetHeroValue() + " gold/sec";
     }
 
     public float GetHeroValue()

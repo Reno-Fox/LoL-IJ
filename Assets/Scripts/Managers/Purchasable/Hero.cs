@@ -14,7 +14,6 @@ public class Hero : MonoBehaviour
 
     public float damagePerSecond;
 
-    public Color standard;
     public Color affordable;
 
     void Start()
@@ -24,15 +23,15 @@ public class Hero : MonoBehaviour
 
     void Update()
     {
-        itemInfo.text = itemName + "\nCost " + goldCost + "\nGold: " + clickRate + "/sec";
-
         if (Game.Instance.clickManager.totalGold >= goldCost)
         {
+            itemInfo.text = itemName + "\nCost " + goldCost + "\nGold: " + clickRate + "/sec";
             GetComponent<Image>().color = affordable;
         }
         else
         {
-            GetComponent<Image>().color = standard;
+            itemInfo.text = "";
+            GetComponent<Image>().color = new Color(affordable.r, affordable.g, affordable.b, 0.5f);
         }
     }
 

@@ -162,7 +162,7 @@ MonoBehaviour:
   goldCost: 5
   count: 0
   clickRate: 5
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damagePerSecond: 0
   affordable: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &39829494
 MonoBehaviour:
@@ -235,7 +235,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ad23854bc2c081c49912ad6c9f32d9a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 14cabcd0a29d44243a67dbf0a3b947ef, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -377,7 +377,7 @@ MonoBehaviour:
   goldCost: 10
   count: 0
   clickRate: 10
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damagePerSecond: 0
   affordable: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &58445753
 MonoBehaviour:
@@ -450,7 +450,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c5ee6109a9adb11428f7f114b1a7d0fe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9abb35dc6642a8b489ab1d6042208be8, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -532,7 +532,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Doran's Blade
+  m_Text: 
 --- !u!222 &59565753
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -608,7 +608,7 @@ MonoBehaviour:
   goldCostMultiplier: 4
   count: 0
   clickRate: 4
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damageBonus: 0
   affordable: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
 --- !u!114 &180667451
 MonoBehaviour:
@@ -681,7 +681,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f76cc235a0b0ad347af3f229cbbcbe51, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76a964165dde3a5408ed78de96d61d55, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -961,7 +961,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bbd44996b0f810f4d85706a75fa67342, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 913e36ab432f4af4d940372bed003a53, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -991,7 +991,7 @@ MonoBehaviour:
   goldCost: 1
   count: 0
   clickRate: 1
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damagePerSecond: 0
   affordable: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &375028233
 GameObject:
@@ -1048,7 +1048,7 @@ MonoBehaviour:
   goldCostMultiplier: 1
   count: 0
   clickRate: 1
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damageBonus: 0
   affordable: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
 --- !u!114 &375028236
 MonoBehaviour:
@@ -1121,7 +1121,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a62f1637c69fd6a41ad1cd9c14425b4a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3528de65034a2c3459b3ad82a62ea1bd, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1203,7 +1203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ashe
+  m_Text: 
 --- !u!222 &381167690
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1278,7 +1278,7 @@ MonoBehaviour:
   goldCost: 7
   count: 0
   clickRate: 7
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damagePerSecond: 0
   affordable: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &403937666
 MonoBehaviour:
@@ -1351,7 +1351,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7f4bcb3b65a9b314eaf72951f3b2b3a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6674adbddcc598645a209d88f9b00c50, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1849,7 +1849,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Blitzcrank
+  m_Text: 
 --- !u!222 &797363505
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1938,7 +1938,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tristana
+  m_Text: 
 --- !u!222 &799313149
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2013,7 +2013,7 @@ MonoBehaviour:
   goldCost: 9
   count: 0
   clickRate: 9
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damagePerSecond: 0
   affordable: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &807613945
 MonoBehaviour:
@@ -2086,7 +2086,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7359be031bdd56f46afd07a505fa78f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a8d9388500307e4bae3aa8d9ed90cc9, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2290,7 +2290,7 @@ MonoBehaviour:
   goldCostMultiplier: 5
   count: 0
   clickRate: 5
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damageBonus: 0
   affordable: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
 --- !u!114 &931040050
 MonoBehaviour:
@@ -2363,7 +2363,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f167031f33a34434792ac250666446b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c71e43d44131df4891ed141249549df, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2714,7 +2714,7 @@ MonoBehaviour:
   goldCostMultiplier: 2
   count: 0
   clickRate: 2
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damageBonus: 0
   affordable: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
 --- !u!114 &1164580140
 MonoBehaviour:
@@ -2787,7 +2787,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 44fdd788dac46354facf4fdde1cb2544, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef798b21499043544b79bf146e3d95b5, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2855,7 +2855,7 @@ MonoBehaviour:
   goldCost: 4
   count: 0
   clickRate: 4
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damagePerSecond: 0
   affordable: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1263330231
 MonoBehaviour:
@@ -2928,7 +2928,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 48d64adaff7f14147b90de6665bc42ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9d92a270ab55484c89a8993c82bf959, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3051,7 +3051,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7038706533d186f418062c44c65ecb4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 821adf47c2cd4d34a98cf053cb85cc56, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3081,7 +3081,7 @@ MonoBehaviour:
   goldCost: 2
   count: 0
   clickRate: 2
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damagePerSecond: 0
   affordable: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1339972374
 GameObject:
@@ -3240,7 +3240,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Warwick
+  m_Text: 
 --- !u!222 &1365191988
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3430,7 +3430,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Long Sword
+  m_Text: 
 --- !u!222 &1434695391
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3519,7 +3519,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Malphite
+  m_Text: 
 --- !u!222 &1464538082
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3709,7 +3709,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vampiric Scepter
+  m_Text: 
 --- !u!222 &1481704517
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3784,7 +3784,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a7a2e5ff8ebd2c545829c042a626623d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff7425280fa405d43952a1234e6dfeb5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3866,7 +3866,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pick Axe
+  m_Text: 
 --- !u!222 &1588003418
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3986,7 +3986,7 @@ MonoBehaviour:
   goldCost: 3
   count: 0
   clickRate: 3
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damagePerSecond: 0
   affordable: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1651110833
 MonoBehaviour:
@@ -4059,7 +4059,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 63d03b0923d008c449c8d401201613a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5539da73ef72bb9428d1d36742b5a243, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4141,7 +4141,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sivir
+  m_Text: 
 --- !u!222 &1666346061
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4230,7 +4230,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Amumu
+  m_Text: 
 --- !u!222 &1737410984
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4305,7 +4305,7 @@ MonoBehaviour:
   goldCost: 8
   count: 0
   clickRate: 8
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damagePerSecond: 0
   affordable: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1795795982
 MonoBehaviour:
@@ -4378,7 +4378,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 951440b848ee1a147901258e42ea3dc3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cb8133d4c6bec9489eb0e09678d942a, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4460,7 +4460,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Morgana
+  m_Text: 
 --- !u!222 &1896525139
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4549,7 +4549,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Soraka
+  m_Text: 
 --- !u!222 &1929375946
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4624,7 +4624,7 @@ MonoBehaviour:
   goldCost: 6
   count: 0
   clickRate: 6
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damagePerSecond: 0
   affordable: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1933303210
 MonoBehaviour:
@@ -4697,7 +4697,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 76dc16ac26d07f045a709a209293267b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 89fcd21daf9ef644caf07063376a55fc, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4779,7 +4779,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Nunu
+  m_Text: 
 --- !u!222 &1965197302
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4868,7 +4868,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: B. F. Sword
+  m_Text: 
 --- !u!222 &2009792574
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5013,7 +5013,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a49dbc48b4b5f9a47ae4d0f4dac8f895, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0b2efc166d49ffb48bb93ed1202c0487, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5082,7 +5082,7 @@ MonoBehaviour:
   goldCostMultiplier: 3
   count: 0
   clickRate: 3
-  standard: {r: 0, g: 0, b: 0, a: 0}
+  damageBonus: 0
   affordable: {r: 0.9607844, g: 0.9607844, b: 0.9607844, a: 1}
 --- !u!114 &2120487370
 MonoBehaviour:
@@ -5155,7 +5155,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 040f4ca81321eb94ba1614b24bb07bb3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2076c7a7fe4594540be0ea20230344c2, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -15,7 +15,6 @@ public class Item : MonoBehaviour
 
     public float damageBonus;
 
-    public Color standard;
     public Color affordable;
 
     void Start()
@@ -26,15 +25,15 @@ public class Item : MonoBehaviour
 
     void Update()
     {
-        itemInfo.text = itemName + "\nCost: " + goldCostMultiplier + "\n" + clickRate + "/gold click";
-
         if (Game.Instance.clickManager.totalGold >= goldCostMultiplier)
         {
+            itemInfo.text = itemName + "\nCost: " + goldCostMultiplier + "\n" + clickRate + "/gold click";
             GetComponent<Image>().color = affordable;
         }
         else
         {
-            GetComponent<Image>().color = standard;
+            itemInfo.text = "";
+            GetComponent<Image>().color = new Color(affordable.r, affordable.g, affordable.b, 0.5f);
         }
     }
 

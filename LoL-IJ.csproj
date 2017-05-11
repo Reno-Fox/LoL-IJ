@@ -83,10 +83,13 @@
     <Compile Include="Assets\Scripts\CurrencyConverter.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
     <Compile Include="Assets\Scripts\Managers\ClickManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\Enemy\BattlefieldManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Managers\HeroManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ItemManager.cs" />
     <Compile Include="Assets\Scripts\Managers\Purchasable\Hero.cs" />
     <Compile Include="Assets\Scripts\Managers\Purchasable\Item.cs" />
+    <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\SaveLoad.cs" />
     <Compile Include="Assets\Scripts\Settings.cs" />
   </ItemGroup>

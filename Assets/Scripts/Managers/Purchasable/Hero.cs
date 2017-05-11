@@ -12,6 +12,8 @@ public class Hero : MonoBehaviour
 
     public int clickRate;
 
+    public float damagePerSecond;
+
     public Color standard;
     public Color affordable;
 

@@ -13,6 +13,8 @@ public class Item : MonoBehaviour
 
     public int clickRate;
 
+    public float damageBonus;
+
     public Color standard;
     public Color affordable;
 

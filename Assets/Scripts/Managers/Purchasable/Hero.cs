@@ -24,7 +24,7 @@ public class Hero : MonoBehaviour
 
     void Update()
     {
-        itemInfo.text = itemName + "\nCost " + goldCost + "\nGold: " + clickRate + "/s";
+        itemInfo.text = itemName + "\nCost " + goldCost + "\nGold: " + clickRate + "/sec";
 
         if (Game.Instance.clickManager.totalGold >= goldCost)
         {
